@@ -22,8 +22,10 @@ print("\nМассив:\n", arr,
       "\nСтандартное отклонение:\t",np.std(arr),
       "\nСреднее значение:\t",np.mean(arr),
       "\nДисперсия:\t\t",np.var(arr))
-
-mark = '-------------------------------------------------------------------------------'
+mark_arr = ['-' for i in range(0,79)]
+mark = ''
+for i in range(0,len(mark_arr)):
+      mark += mark_arr[i]
 
 plt.figure("Nice one",figsize = (12,6))
 
